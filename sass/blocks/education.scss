@@ -1,0 +1,75 @@
+.education {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+};
+
+.education__inner {
+  display: flex;
+  width: 100%;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    flex-direction: column;
+  }
+  
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+};
+
+.education__title {
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    text-align: center;
+  }
+  
+  @media (max-width: $tablet) {
+    text-align: center;
+  }
+}
+
+.education__description {
+  width: 50%;
+  padding-right: 3%;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    width: 100%;
+    text-align: center;
+  }
+  
+  @media (max-width: $tablet) {
+    text-align: center;
+    width: 100%;
+  }
+};
+
+.education__info {
+  width: 50%;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    width: 100%;
+  }
+};
+
+.education__info-item-img {
+  transition: all 1s ease-out;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    width: 200px;
+    height: 300px;
+  }
+  
+  @media (max-width: $tablet) {
+    width: 110px;
+    height: 150px;
+  }
+}
+
+.education__info-item-img:hover {
+  transform: scale(2);
+  animation-duration: 3s;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    transform: scale(1.3)
+  }
+}

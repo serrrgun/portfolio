@@ -1,0 +1,35 @@
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 90px;
+  background-color: #f2f2f1;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+};
+
+.resume__desription {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+};
+
+.resume__btn {
+  width: 30%;
+  
+  @media (max-width: $tablet) {
+    width: 70%;
+  }
+}

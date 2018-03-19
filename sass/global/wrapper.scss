@@ -1,0 +1,14 @@
+.wrapper {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  @media (max-width: $tablet) {
+    padding-left: 30px;
+    padding-right: 30px;;
+  }
+}

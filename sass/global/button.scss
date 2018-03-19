@@ -1,0 +1,29 @@
+.button {
+  font-family: "Roboto", "Arival", sans-serif;
+  display: inline-block;
+  width: 45%;;
+  padding: 10px 0;
+  border: 2px solid #2ecc71;
+  color: #2ecc71;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:active {
+    color:red;
+  }
+}

@@ -1,0 +1,64 @@
+.my-skill {
+  display: flex;
+  padding-bottom: 80px;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    padding-bottom: 30px;
+  }
+  
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+};
+
+.my-skill__description {
+ opacity: 0;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-top: 45px;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    padding-top: 20px;
+  }
+  
+  @media (max-width: $tablet) {
+    width: 100%;
+    text-align: center;
+  }
+};
+
+.my-skill__info {
+  display: inline-block;
+  margin-bottom: 45px;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    margin-bottom: 35px;
+  }
+};
+
+.my-skill__btn {
+  
+  @media (max-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
+  }
+};
+
+.my-skill__bar {
+  opacity: 0;
+  padding-top: 100px;
+  margin-left: 3%;
+  width: 50%;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    padding-top: 65px;
+  }
+  
+  @media (max-width: $tablet) {
+    width: 100%;
+    margin-left: 0;
+  }
+};

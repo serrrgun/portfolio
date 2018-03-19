@@ -1,0 +1,17 @@
+.table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 50px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #919191;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+};
+
+.table__param {
+  color: #fff;
+}

@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background-color: #191f21;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+};
+
+.footer__container{
+  display: flex;
+  align-items: center;
+}
+
+.footer__icon-svg {
+  margin-right: 15px;
+  fill: #4b5456;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+}

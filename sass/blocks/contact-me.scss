@@ -1,0 +1,85 @@
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #252e30;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+};
+
+.contact-me__title {
+  color: #fff;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+};
+
+.contact-me__inner {
+  display: flex;
+  width: 100%;
+  
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+};
+
+.contact-me__description {
+  width: 50%;
+  padding-right: 2%;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    //
+  }
+  
+  @media (max-width: $tablet) {
+    width: 100%;
+   
+  }
+};
+
+.contact-me__ph {
+  margin-bottom: 50px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #919191;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+}
+
+.contact-me__adress {
+  text-align: left;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #919191;
+  
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+
+.contact-me__form {
+  width: 50%;
+  
+  @media (max-width: $tablet) {
+    width: 100%;
+    order: 2;
+  }
+};
