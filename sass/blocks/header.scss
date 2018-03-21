@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   //padding-top: 15%;
-  
+
   @media (min-width: $tablet) and (max-width: $desktop) {
     order: 2;
   }
@@ -35,13 +35,13 @@
   border-top: 1px solid gray;
   text-align: center;
   color: gray;
-  
+
   @media (min-width: $tablet) and (max-width: $desktop) {
     transform: translateY(+500%);
     font-size: 30px;
     line-height: 33px;
   }
-  
+
   @media (max-width: $tablet) {
      transform: translateY(+600%);
     font-size: 20px;
@@ -56,7 +56,7 @@
   box-sizing: border-box;
   justify-content: space-between;
   background-color: #252e30;
-  
+
   @media (min-width: $tablet) and (max-width: $desktop) {
     position: fixed;
     display: none;
@@ -68,14 +68,27 @@
     right: 0;
     opacity: 0.5;
   }
-  
+
   @media (max-width: $tablet) {
+    position: fixed;
     display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    height: 100vh;
+    padding-top: 35px;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
   }
 };
 
 .block__menu {
   @media (min-width: $tablet) and (max-width: $desktop) {
+    display: flex;
+  }
+
+  @media (max-width: $tablet) {
     display: flex;
   }
 };
@@ -94,15 +107,24 @@
   box-sizing: border-box;
   flex-wrap: wrap;
   list-style: none;
-  
+
   @media (min-width: $tablet) and (max-width: $desktop) {
     flex-direction: column;
+  }
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    padding: 0;
   }
 };
 
 .header-slide__menu-item {
   margin-right: 15px;
   color: #fff;
+
+  @media (max-width: $tablet) {
+    margin-top: 15px;
+  }
 };
 
 .header-slide__menu-item a {
@@ -111,7 +133,7 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 25px;
-  
+
   @media (min-width: $tablet) and (max-width: $desktop) {
     line-height: 15px;
     font-size: 12px;
@@ -137,8 +159,17 @@
   font-size: 18px;
   line-height: 40px;
   color: #fff;
-  
+
   @media (min-width: $tablet) and (max-width: $desktop) {
+    width: 30px;
+    height: 30px;
+    border: 3px solid #4b5456;
+    font-size: 15px;
+    line-height: 30px;
+    border-radius: 50px;
+  }
+
+  @media (max-width: $tablet)  {
     width: 30px;
     height: 30px;
     border: 3px solid #4b5456;
@@ -153,9 +184,8 @@
   font-weight: bold;
   vertical-align: bottom;
   margin-left: 5px;
-  
+
   @media (min-width: $tablet) and (max-width: $desktop) {
     font-size: 12px;
   }
 };
-  

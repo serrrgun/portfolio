@@ -530,9 +530,29 @@ a {
       opacity: 0.5; } }
   @media (max-width: 768px) {
     .header-slide__menu {
-      display: none; } }
+      position: fixed;
+      display: none;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      width: 80%;
+      height: 100vh;
+      padding-top: 35px;
+      top: 0;
+      right: 0;
+      opacity: 0.5; } }
 
 @media (min-width: 768px) and (max-width: 1150px) {
+  .block__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media (max-width: 768px) {
   .block__menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -561,10 +581,20 @@ a {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
+  @media (max-width: 768px) {
+    .header-slide__menu-items {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 0; } }
 
 .header-slide__menu-item {
   margin-right: 15px;
   color: #fff; }
+  @media (max-width: 768px) {
+    .header-slide__menu-item {
+      margin-top: 15px; } }
 
 .header-slide__menu-item a {
   text-decoration: none;
@@ -602,6 +632,14 @@ a {
   line-height: 40px;
   color: #fff; }
   @media (min-width: 768px) and (max-width: 1150px) {
+    .header-slide__logo-abb {
+      width: 30px;
+      height: 30px;
+      border: 3px solid #4b5456;
+      font-size: 15px;
+      line-height: 30px;
+      border-radius: 50px; } }
+  @media (max-width: 768px) {
     .header-slide__logo-abb {
       width: 30px;
       height: 30px;
@@ -1439,11 +1477,16 @@ a {
 
 .menu-icon {
   display: none; }
-  @media (max-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1150px) {
     .menu-icon {
       position: fixed; } }
+  @media (min-width: 0) and (max-width: 768px) {
+    .menu-icon {
+      position: fixed;
+      width: 20px;
+      height: 30px; } }
 
-@media (min-width: 768px) and (max-width: 1150px) {
+@media (min-width: 0) and (max-width: 1150px) {
   /*  RESET
 ========================================= */
   /*  MENU ICON
