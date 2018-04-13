@@ -8,6 +8,7 @@ for (var i = 0; i < linkNav.length; i++) {
         var w = window.pageYOffset,  // производим прокрутка прокрутка
             hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
         var t = document.querySelector(hash).getBoundingClientRect().top,  // отступ от окна браузера до id
+
             start = null;
         requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
         function step(time) {

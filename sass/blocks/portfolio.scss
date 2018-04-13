@@ -4,10 +4,10 @@
   align-items: center;
   padding-top: 40px;
   background-color: #f2f2f1;
-    
+
   @media (min-width: $tablet) and (max-width: $desktop) {
     padding-top: 20px;
-  }  
+  }
 };
 
 .portfolio__title {
@@ -26,13 +26,14 @@
   justify-content: space-around;
   margin-top: 100px;
   margin-bottom: 50px;
-  
+  width: 100%;
+
   @media (min-width: $tablet) and (max-width: $desktop) {
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
   }
-  
+
   @media (max-width: $tablet) {
     flex-direction: column;
     align-items: center;
@@ -40,42 +41,87 @@
   }
 };
 
-/*.portfolio__item {
-  border: 1px solid gray;
-  
+.portfolio__item {
+  position: relative;
+  width: 30%;
+
+ :hover .portfolio__item-description {
+    opacity: 1;
+  };
+
   @media (min-width: $tablet) and (max-width: $desktop) {
     object-fit: contain;
     margin-top: 20px;
     width: 80%;
     height: 400px;
   }
-};*/
+
+  @media (max-width: $tablet) {
+    width: 90%;
+    height: auto;
+    align-items: stretch;
+  }
+};
+
+.portfolio__item a {
+  display: block;
+  width: 100%;
+}
 
 .portfolio__item img {
   border: 1px solid gray;
-  
+  width: 100%;
+  line-height: none;
+
+
+
+
   @media (min-width: $tablet) and (max-width: $desktop) {
     object-fit: cover;
-   // object-position: 0 0;
     width: 600px;
     height: 350px;
-    
-  }
-}
 
-.portfolio__item--center {
-  margin-right: 2%;
-  margin-left: 2%;
-  
-  @media (min-width: $tablet) and (max-width: $desktop) {
-    margin: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
   }
-  
+
   @media (max-width: $tablet) {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    height: 100%;
   }
 };
+
+.portfolio__item-description {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+  transition: all 1s ease;
+  top: 0;
+  left: 0;
+  padding: 20px;
+
+  width: 100%;
+  min-height: 162px;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    width: 562px;
+    height: 312px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
+};
+
+.portfolio__item-description span {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  height: 25px;
+  background-color: lawngreen;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+};
+
