@@ -691,6 +691,9 @@ a {
 .advantages__item {
   text-align: center;
   width: 30%; }
+  @media (max-width: 768px) {
+    .advantages__item {
+      width: 100%; } }
 
 .advantages__item--goals {
   padding-left: 3%;
